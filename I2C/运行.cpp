@@ -2,13 +2,13 @@
 int Start()
 {
 	SDA_High();
-	SCL_High();
+	Delay(5);
 	SDA_Low();
 }
 int Stop()
 {
 	SDA_Low();
-	SCL_Low();
+	Delay(5);
 	SDA_High();
 }
 int i = 0;
@@ -30,7 +30,7 @@ int SendByte(unsigned char data)
 int ReceiveAck()
 {
 	SCL_High();
-	SDA_High();
+	Delay(5);
 	SCL_Low();
 }
 int SendDate()
