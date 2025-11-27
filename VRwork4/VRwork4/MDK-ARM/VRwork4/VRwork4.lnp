@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"vrwork4\startup_stm32f103xb.o"
+"vrwork4\main.o"
+"vrwork4\stm32f1xx_it.o"
+"vrwork4\stm32f1xx_hal_msp.o"
+"vrwork4\stm32f1xx_hal_gpio_ex.o"
+"vrwork4\stm32f1xx_hal_tim.o"
+"vrwork4\stm32f1xx_hal_tim_ex.o"
+"vrwork4\stm32f1xx_hal.o"
+"vrwork4\stm32f1xx_hal_rcc.o"
+"vrwork4\stm32f1xx_hal_rcc_ex.o"
+"vrwork4\stm32f1xx_hal_gpio.o"
+"vrwork4\stm32f1xx_hal_dma.o"
+"vrwork4\stm32f1xx_hal_cortex.o"
+"vrwork4\stm32f1xx_hal_pwr.o"
+"vrwork4\stm32f1xx_hal_flash.o"
+"vrwork4\stm32f1xx_hal_flash_ex.o"
+"vrwork4\stm32f1xx_hal_exti.o"
+"vrwork4\system_stm32f1xx.o"
+--strict --scatter "VRwork4\VRwork4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "VRwork4.map" -o VRwork4\VRwork4.axf
